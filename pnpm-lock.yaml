@@ -98,7 +98,6 @@ importers:
       '@react-three/fiber':
         specifier: 8.13.7
         version: 8.13.7(@types/react@18.0.0)(expo-asset@12.0.9(expo@54.0.10(@babel/core@7.28.4)(react-native@0.81.4(@babel/core@7.28.4)(@types/react@18.0.0)(react@18.0.0))(react@18.0.0))(react-native@0.81.4(@babel/core@7.28.4)(@types/react@18.0.0)(react@18.0.0))(react@18.0.0))(expo-gl@16.0.7(expo@54.0.10(@babel/core@7.28.4)(react-native@0.81.4(@babel/core@7.28.4)(@types/react@18.0.0)(react@18.0.0))(react@18.0.0))(react-dom@18.0.0(react@18.0.0))(react-native@0.81.4(@babel/core@7.28.4)(@types/react@18.0.0)(react@18.0.0))(react@18.0.0))(expo@54.0.10(@babel/core@7.28.4)(react-native@0.81.4(@babel/core@7.28.4)(@types/react@18.0.0)(react@18.0.0))(react@18.0.0))(react-dom@18.0.0(react@18.0.0))(react-native@0.81.4(@babel/core@7.28.4)(@types/react@18.0.0)(react@18.0.0))(react@18.0.0)(three@0.143.0)
-      '@vercel/analytics':
         specifier: latest
         version: 1.5.0(next@14.2.16(@babel/core@7.28.4)(react-dom@18.0.0(react@18.0.0))(react@18.0.0))(react@18.0.0)
       autoprefixer:
@@ -2001,7 +2000,6 @@ packages:
     peerDependencies:
       react: '>= 16.8.0'
 
-  '@vercel/analytics@1.5.0':
     resolution: {integrity: sha512-MYsBzfPki4gthY5HnYN7jgInhAZ7Ac1cYDoRWFomwGHWEX7odTEzbtg9kf/QSo7XEsEAqlQugA6gJ2WS2DEa3g==}
     peerDependencies:
       '@remix-run/react': ^2
@@ -6598,7 +6596,6 @@ snapshots:
       '@use-gesture/core': 10.3.1
       react: 18.0.0
 
-  '@vercel/analytics@1.5.0(next@14.2.16(@babel/core@7.28.4)(react-dom@18.0.0(react@18.0.0))(react@18.0.0))(react@18.0.0)':
     optionalDependencies:
       next: 14.2.16(@babel/core@7.28.4)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)
       react: 18.0.0
