@@ -88,7 +88,7 @@ export function Header() {
           <button
             className="md:hidden flex flex-col gap-1 focus:outline-none border-none bg-transparent"
             aria-label="Ouvrir le menu"
-            style={{ background: 'none', boxShadow: 'none' }}
+            style={{ background: "none", boxShadow: "none" }}
             onClick={() => setMenuOpen((open) => !open)}
           >
             <span className="block w-7 h-1 bg-gray-700 rounded"></span>
@@ -108,14 +108,20 @@ export function Header() {
             </a>
             <a
               href="#services"
-              onClick={(e) => { smoothScrollTo(e, "#services"); setMenuOpen(false); }}
+              onClick={(e) => {
+                smoothScrollTo(e, "#services");
+                setMenuOpen(false);
+              }}
               className="text-sm font-medium text-gray-700 hover:text-primary transition-all duration-300 border-b-2 border-transparent hover:border-sky-400 px-2 py-1 rounded"
             >
               Services
             </a>
             <a
               href="#contact"
-              onClick={(e) => { smoothScrollTo(e, "#contact"); setMenuOpen(false); }}
+              onClick={(e) => {
+                smoothScrollTo(e, "#contact");
+                setMenuOpen(false);
+              }}
               className="text-sm font-medium text-gray-700 hover:text-primary transition-all duration-300 border-b-2 border-transparent hover:border-sky-400 px-2 py-1 rounded"
             >
               Contact
