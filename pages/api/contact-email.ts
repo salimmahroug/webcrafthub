@@ -12,24 +12,24 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     return res.status(400).json({ error: 'Missing fields' });
   }
 
-  // Configure your SMTP transport (use Gmail for demo, but ideally use a real SMTP)
+  // Configure SMTP transport with environment variables
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'mahrougsalim8@gmail.com', // Your Gmail address
-      pass: 'rglwyoujxkvckgit', // Gmail App Password
+      user: process.env.GMAIL_USER,
+      pass: process.env.GMAIL_PASS,
     },
   });
 
   try {
     await transporter.sendMail({
       from: email,
-      to: 'mahrougsalim8@gmail.com',
+      to: process.env.GMAIL_USER,
       subject: `[Contact Web] ${subject}`,
       text: `Nom: ${name}\nEmail: ${email}\nMessage: ${message}`,
     });
     return res.status(200).json({ success: true });
-  } catch (error) {
-    return res.status(500).json({ error: 'Failed to send email' });
+  } catch (error: any) {
+    return res.status(500).json({ error: error?.message || 'Failed to send email' });
   }
 }
